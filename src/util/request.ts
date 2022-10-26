@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
+import { request } from "http";
 
 /* eslint-disable @typescript-eslint/no-empty-interface */
 export interface RequestConfig extends AxiosRequestConfig {}
@@ -39,8 +40,8 @@ export class Request {
     // recebe a url da conexão
     // data são as informações dentro do {}
     // config são os headers são requisição
-   
-    return  this.request.post<T, Response<T>>(url, data, config);
+
+    return this.request.post<T, Response<T>>(url, data, config);
     // essa função chama a request.post e passa as informações
   }
 

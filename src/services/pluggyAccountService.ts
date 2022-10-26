@@ -25,6 +25,7 @@ export class AccountPluggy {
       await this.pluggyAccount.BuscaContasDoItem(apiKey, itemId);
 
     await this.adicionaIdBanco(response, idMongoose);
+    // @TODO fazer cache desses dados
 
     return response;
   }

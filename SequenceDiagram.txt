@@ -1,0 +1,41 @@
+title This is a title
+
+participant webApp
+participant itens-Controller
+
+participant Accounts-controller
+
+participant Transactions-controller
+
+participant itens-service
+
+participant Accounts-service
+
+participant Transactions-service
+
+
+participant API-pluggy
+
+webApp->itens-Controller:post/ \nEnvia dados do\nlogin do banco
+
+itens-Controller->itens-service:Leva a informação \ne validação
+itens-service->API-pluggy:leva informações de conta para pluggy
+itens-service<-API-pluggy:devolve informação da criação da conta
+itens-Controller<-itens-service:devolve a informação \nda contaCom a \ninformação salva no DB
+webApp<-itens-Controller:res status 200\ncom message de \nconfirmação.
+webApp->Accounts-controller:get/\nbuscando lista De Contas
+webApp<-Accounts-controller:get/\nres status 200 com lista de contas \nvinculadas\n
+webApp->Accounts-controller:get/itemId\nbuscando detalhes conta
+Accounts-controller->Accounts-service:get/iItemId\npassa info itemId\npara ser detalhado\n
+Accounts-service->API-pluggy:leva info do item para a pluggy\ne espera informações da account\n
+Accounts-service<-API-pluggy:devolve informações da account\ne salva o accountId 
+Accounts-controller<-Accounts-service:get/itemId\ndevolve info requisitadas
+webApp<-Accounts-controller:/get\nres status 200 com info da conta
+webApp->Transactions-controller:get/?itemid=\nbuscando itens associados aquela conta
+Transactions-controller->Transactions-service:passa informações para a busca da informação\n
+Transactions-service->API-pluggy:leva info do item da conta\ne das informações que está requisitando
+Transactions-service<-API-pluggy:devolve as transações da conta\n
+Transactions-controller<-Transactions-service:informações da conta\nsalva elas no DB\n
+webApp<-Transactions-controller:/get?itemid=\nres status 200\ncom results com todas as transações do usuário\n
+webApp->Transactions-controller:get/:transactionId?\nbuscando informações da transação unica
+webApp<-Transactions-controller:get/:transactionId?\ndevolve informações capturados no DB

@@ -4,10 +4,6 @@ import { User } from "@src/model/user";
 import AuthService from "@src/services/authService";
 import { BaseController } from ".";
 
-// Vamos definir uma variavel
-// mas isso não é legal de fazer
-// o certo é um DB
-
 @Controller("users")
 export class UsersController extends BaseController {
   // mesmo com necessidade de extender o extender o base Controller

@@ -61,13 +61,13 @@ export class PluggyAccount {
         axiosConfig
       );
 
-      return response.data.results[0];
-        // se atentar aqui pq está buscando somente os dados do Bancarios
-        // da categoria BANK
-        // IMPORTANTE caso queria expandir o sistema
-        
-      
+      // @TODO é atualizar a rota para trazer outros tipos de contas
+      // associadas ao item
 
+      return response.data.results[0];
+      // se atentar aqui pq está buscando somente os dados do Bancarios
+      // da categoria BANK
+      // IMPORTANTE caso queria expandir o sistema
     } catch (err) {
       if (err instanceof Error && HTTPUtil.Request.isRequestError(err)) {
         const error = HTTPUtil.Request.extractErrorData(err);

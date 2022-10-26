@@ -20,7 +20,7 @@ export class ItensPluggyService {
       );
       // cria a conexão da pluggy
 
-      this.criaItemDB(idUser, item.itemId, item.nameBank);
+      await this.criaItemDB(idUser, item.itemId, item.nameBank);
 
       return true;
     } catch (e) {
@@ -29,6 +29,7 @@ export class ItensPluggyService {
       // para extender o erro local que aconteceu
       // com isso todos os erros do sistema vão parar no mesmo lugar e para o fim
       // de logar eles
+      console.log(e);
       throw new Error("Erro na criação do item: " + e);
     }
   }
@@ -38,11 +39,15 @@ export class ItensPluggyService {
     itemIdPluggy: string,
     nameBank: string
   ): Promise<void> {
-    const item = new Item({
-      user: userIDMongoose,
-      itemId: itemIdPluggy,
-      nameBank: nameBank,
-    });
-    await item.save();
+    try {
+      const item = new Item({
+        user: userIDMongoose,
+        itemId: itemIdPluggy,
+        nameBank: nameBank,
+      });
+      await item.save();
+    } catch (e) {
+      throw new Error("Error salvar db" + e);
+    }
   }
 }

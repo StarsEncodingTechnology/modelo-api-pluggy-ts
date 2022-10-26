@@ -3,22 +3,26 @@ import { authMiddleware } from "@src/middlewares/auth";
 import { AuthPluggyService } from "@src/services/pluggyAuthService";
 import { ItensPluggyService } from "@src/services/pluggyItensService";
 import { Request, Response } from "express";
+import { BaseController } from ".";
 
 const authPluggy = new AuthPluggyService();
 const itensPluggy = new ItensPluggyService();
 
 @Controller("item")
 @ClassMiddleware(authMiddleware)
-export class ItemControllers {
+export class ItemControllers extends BaseController {
   // @TODO esse controler precisa de um item que é de ver
   // seguiu tudo certo a autenticação via API junto da pluggy
   // se o usuario digitou a senha correta e seguintes
 
-
   @Post("")
-  public async criaItem(req: Request, res: Response): Promise<Response> {
+  public async criaItem(
+    req: Request,
+    res: Response
+  ): Promise<Response | Error> {
     try {
       const { user, password, connectorId } = req.body;
+      // @TODO isso é padrão para o conecctorID 8
 
       if (!user)
         return res.status(422).send({ code: 422, message: "user is requided" });
@@ -60,8 +64,10 @@ export class ItemControllers {
         });
       }
     } catch (e) {
-      console.log(e);
-      return res.status(500).send({ code: 500, message: `Error: ${e}` });
+      // @TODO isso aqui não pode ocorrer
+      // captura de erro unitario
+      this.sendCreateUpdateErrorResponse(res, e);
+      return e as Error;
     }
   }
 }

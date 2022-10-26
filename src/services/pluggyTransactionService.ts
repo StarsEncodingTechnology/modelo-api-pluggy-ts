@@ -83,6 +83,8 @@ export class TransactionPluggy {
           }).save();
       }
     } catch (e) {
+      // @TODO isso jamais pode acontecer
+      // nenhuma captura de erro
       console.log({ e });
     }
   }

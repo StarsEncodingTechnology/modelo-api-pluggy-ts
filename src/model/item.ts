@@ -15,9 +15,9 @@ const schema = new mongoose.Schema(
     user: { type: Schema.Types.ObjectId, ref: "User", require: true },
     itemId: { type: String, require: true, unique: true },
     nameBank: { type: String, require: true },
-    bankAccountId: { type: String, require: false, unique: true },
-    creditAccountId: { type: String, require: false, unique: true },
-    AlternativeAccountId: { type: String, require: false, unique: true },
+    bankAccountId: { type: String, require: false },
+    AlternativeAccountId: { type: String, require: false },
+    creditAccountId: { type: String, require: false },
   },
   {
     toJSON: {

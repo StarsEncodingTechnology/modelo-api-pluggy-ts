@@ -41,10 +41,13 @@ export class TransactionsControllers extends BaseController {
       //------------- está parte do codigo precisa ser alterada
       //pois está como padrão somente a conta bank
       const item = await Item.findOne({ itemId: itemId });
+      console.log({ item });
       if (!item?.bankAccountId)
-        return res
-          .status(404)
-          .send({ code: 404, message: "Conta não encontrada" });
+        // @TODO está retornando somente BANK
+        return res.status(404).send({
+          code: 404,
+          message: "Conta não encontrada, tente pelo rota de accounts",
+        });
 
       const dados = await transactionPluggy.buscaTransacoesDaConta(
         apiKey,

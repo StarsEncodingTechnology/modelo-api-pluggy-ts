@@ -2,6 +2,7 @@ import { InternalError } from "@src/util/internal-error";
 import * as HTTPUtil from "@src/util/request";
 
 export const APIURLPLUGGY = "https://api.pluggy.ai/";
+// armazenar de outro forma parece uma ideia melhor
 
 interface DataApiKey {
   [key: string]: string;
@@ -31,7 +32,6 @@ export class PluggyAuth {
     // essa é a estruta dos dados que passeremos para a pi
     // substitua os dados com os que constam no https://dashboard.pluggy.ai/applications
     try {
-
       const response: ResponsePluggyAuth = await this.request.post(
         "https://api.pluggy.ai/auth",
         // pegando o link da api global

@@ -36,12 +36,14 @@ export class AccountController extends BaseController {
           .send({ code: 400, message: "item_id não cadastrado" });
 
       const apiKey = await authPluggy.processoDeBuscaDeTokenPluggy();
+      // @TODO cache
       const results = await accountPluggy.processoDeBuscaDeContas(
         apiKey,
         item.itemId,
         item.id
       );
 
+      // @TODO travar sem returno
       return res.status(200).send({ code: 200, results: results });
     } catch (e) {
       this.sendCreateUpdateErrorResponse(res, e);

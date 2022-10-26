@@ -34,7 +34,6 @@ export default class AuthService {
   public static generateToken(payload: object): string {
     // gera um token com base nos valores passados
     return jwt.sign(payload, process.env.SECRETKEYJWT as string, {
-      // "jwt-create-auth-key" é o codigo de criptografia
       // normalmente usado na .env
       // acessando ele com process.env.AUTHJWT
       expiresIn: "24h",
