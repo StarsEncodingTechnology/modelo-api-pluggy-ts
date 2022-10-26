@@ -1,0 +1,1520 @@
+{
+  "total": 32,
+  "totalPages": 1,
+  "page": 1,
+  "results": [
+    {
+      "id": 220,
+      "name": "Agora Investimentos",
+      "primaryColor": "13383d",
+      "institutionUrl": "https://www.agorainvestimentos.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^(\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2})|(\\d{2}.?\\d{3}.?\\d{3}/?\\d{4}-?\\d{2})$",
+          "validationMessage": "CPF ou CNPJ deve ter 11 ou 14 números.",
+          "label": "CPF / CNPJ",
+          "name": "cpf",
+          "type": "text",
+          "placeholder": "123.456.789-00",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "A senha deve ter 6 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^[A-Z]{3}\\d{4}$",
+          "validationMessage": "A assinatura eletrônica deve ter o formato ABC1234.",
+          "label": "Assinatura eletrônica",
+          "name": "signature",
+          "type": "text",
+          "placeholder": "Exemplo: ABC1234",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/220.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "UNSTABLE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2021-04-05T20:42:33.133Z"
+    },
+    {
+      "id": 224,
+      "name": "Ailos",
+      "primaryColor": "00A9CE",
+      "institutionUrl": "https://www.viacredi.coop.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{2,7}\\d$",
+          "validationMessage": "A conta deve ter de 3 a 8 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "text",
+          "placeholder": "Exemplo: 12345678",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{8}$",
+          "validationMessage": "A senha deve ter 8 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{10,40}$",
+          "validationMessage": "A Frase deve ter de 10 e 40 caracteres.",
+          "label": "Frase Secreta",
+          "name": "phrase",
+          "type": "password",
+          "placeholder": "Exemplo: 12345678901",
+          "optional": false
+        },
+        {
+          "name": "cooperative",
+          "label": "Cooperativa",
+          "type": "select",
+          "options": [
+            {
+              "value": "viacredi",
+              "label": "Viacredi"
+            },
+            {
+              "value": "evolua",
+              "label": "Evolua"
+            },
+            {
+              "value": "acentra",
+              "label": "Acentra"
+            },
+            {
+              "value": "civia",
+              "label": "Civia"
+            },
+            {
+              "value": "credifoz",
+              "label": "Credifoz"
+            },
+            {
+              "value": "unilos",
+              "label": "Unilos"
+            },
+            {
+              "value": "viacredialtovale",
+              "label": "Viacredi Alto Vale"
+            },
+            {
+              "value": "acredi",
+              "label": "Acredicoop"
+            },
+            {
+              "value": "credcrea",
+              "label": "CredCrea"
+            },
+            {
+              "value": "credicomin",
+              "label": "Credicomin"
+            },
+            {
+              "value": "crevisc",
+              "label": "Crevisc"
+            },
+            {
+              "value": "transpocred",
+              "label": "Transpocred"
+            }
+          ],
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/224.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS"],
+      "createdAt": "2022-03-15T19:51:37.386Z"
+    },
+    {
+      "id": 222,
+      "name": "B3 CEI",
+      "primaryColor": "002c63",
+      "institutionUrl": "https://www.investidor.b3.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^(\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2})|(\\d{2}.?\\d{3}.?\\d{3}/?\\d{4}-?\\d{2})$",
+          "validationMessage": "CPF ou CNPJ deve ter 11 ou 14 números.",
+          "label": "CPF/CNPJ",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{8,20}$",
+          "validationMessage": "A senha deve ter de 8 a 20 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/222.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": "BETA"
+      },
+      "products": ["INVESTMENTS", "IDENTITY"],
+      "createdAt": "2021-08-31T21:23:51.298Z"
+    },
+    {
+      "id": 211,
+      "name": "Banco do Brasil",
+      "primaryColor": "1194F6",
+      "institutionUrl": "https://bb.com.br",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3,4}-?\\d$",
+          "validationMessage": "O agência deve ter de 4 a 5 números.",
+          "label": "Agência",
+          "name": "agency",
+          "type": "number",
+          "placeholder": "Exemplo: 1234-0",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{3,11}-?\\d$",
+          "validationMessage": "A conta deve ter de 4 a 12 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "number",
+          "placeholder": "Exemplo: 123456-0",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{8}$",
+          "validationMessage": "A senha deve ter 8 números.",
+          "label": "Senha 8 dígitos",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/211.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "IDENTITY",
+        "INVESTMENTS"
+      ],
+      "createdAt": "2021-01-15T13:16:51.938Z"
+    },
+    {
+      "id": 217,
+      "name": "Banco do Brasil Empresas",
+      "primaryColor": "1194F6",
+      "institutionUrl": "https://bb.com.br",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^.{8}$",
+          "validationMessage": "A chave J deve ter 8 caracteres.",
+          "label": "Chave J",
+          "name": "userJ",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{8}$",
+          "validationMessage": "A senha deve ter 8 caracteres.",
+          "label": "Senha J",
+          "name": "passwordJ",
+          "type": "password",
+          "placeholder": "Exemplo: 1234abcd",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{8}$",
+          "validationMessage": "A senha deve ter 8 números.",
+          "label": "Senha 8 dígitos",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/217.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "IDENTITY", "CREDIT_CARDS"],
+      "createdAt": "2021-03-01T16:38:59.776Z"
+    },
+    {
+      "id": 215,
+      "name": "Banco Inter",
+      "primaryColor": "fb6910",
+      "institutionUrl": "https://internetbanking.bancointer.com.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{5,8}\\d$",
+          "validationMessage": "A conta deve ter de 6 a 9 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{6,20}$",
+          "validationMessage": "A senha deve ter de 6 a 20 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "O token deve ter 6 números.",
+          "label": "Token",
+          "name": "token",
+          "type": "number",
+          "placeholder": "",
+          "mfa": true,
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/215.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "IDENTITY",
+        "CREDIT_CARDS",
+        "INVESTMENTS"
+      ],
+      "createdAt": "2021-02-19T13:40:57.938Z"
+    },
+    {
+      "id": 225,
+      "name": "Banco Inter Empresas",
+      "primaryColor": "fb6910",
+      "institutionUrl": "https://www.bancointer.com.br/empresas/conta-digital/pessoa-juridica/",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^.{36}$",
+          "validationMessage": "O usuário deve ter 36 caracteres.",
+          "label": "Client Id",
+          "name": "clientId",
+          "type": "text",
+          "placeholder": "Exemplo: 6153f606-19e4-4fd5-911c-7df242227979",
+          "optional": false
+        },
+        {
+          "validation": "^.{36}$",
+          "validationMessage": "A senha deve ter 36 caracteres.",
+          "label": "Client Secret",
+          "name": "clientSecret",
+          "type": "text",
+          "placeholder": "Exemplo: f4b6d39f-89e5-4467-9a54-db552da085d3",
+          "optional": false
+        },
+        {
+          "validation": "^(?:[A-Za-z0-9+\\/]{4})*(?:[A-Za-z0-9+\\/]{2}==|[A-Za-z0-9+\\/]{3}=)?$",
+          "validationMessage": "Deve ser uma base64 válida",
+          "label": "Private Key",
+          "name": "privateKey",
+          "type": "text",
+          "instructions": "Deve ser a base64 do arquivo API_Chave.key sem quebras de linha ou cabeçalho inicial e final",
+          "optional": false
+        },
+        {
+          "validation": "^(?:[A-Za-z0-9+\\/]{4})*(?:[A-Za-z0-9+\\/]{2}==|[A-Za-z0-9+\\/]{3}=)?$",
+          "validationMessage": "Deve ser uma base64 válida",
+          "label": "Certificate",
+          "name": "certificate",
+          "type": "text",
+          "instructions": "Deve ser a base64 do arquivo API_Certificado.crt sem quebras de linha ou cabeçalho inicial e final",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/215.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "IDENTITY"],
+      "createdAt": "2022-05-16T18:18:15.069Z"
+    },
+    {
+      "id": 203,
+      "name": "Bradesco",
+      "primaryColor": "e5173f",
+      "institutionUrl": "https://banco.bradesco/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{0,3}\\d$",
+          "validationMessage": "O agência deve ter de 1 a 4 números.",
+          "label": "Agência",
+          "name": "agency",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{5,6}-?\\d$",
+          "validationMessage": "A conta deve ter de 6 a 7 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "text",
+          "placeholder": "Exemplo: 12345-6",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{4}$",
+          "validationMessage": "A senha deve ter 4 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "Exemplo: 1234",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "O chave de segurança deve ter 6 números.",
+          "label": "Chave de segurança",
+          "name": "token",
+          "type": "number",
+          "mfa": true,
+          "placeholder": "Exemplo: 123456",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/203.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "CREDIT_CARDS", "TRANSACTIONS", "INVESTMENTS"],
+      "createdAt": "2020-08-25T21:40:41.034Z"
+    },
+    {
+      "id": 209,
+      "name": "Bradesco Empresas",
+      "primaryColor": "e5173f",
+      "institutionUrl": "https://banco.bradesco/",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^.{6,20}$",
+          "validationMessage": "O usuário deve ter de 6 a 20 caracteres.",
+          "label": "Usuário",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{8,20}$",
+          "validationMessage": "A senha deve ter de 8 a 20 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/209.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "CREDIT_CARDS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-11-25T11:47:46.901Z"
+    },
+    {
+      "id": 214,
+      "name": "BTGPactual",
+      "primaryColor": "66768f",
+      "institutionUrl": "https://www.btgpactualdigital.com/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}$",
+          "validationMessage": "CPF deve ter 11 números.",
+          "label": "CPF",
+          "name": "cpf",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{1,50}$",
+          "validationMessage": "A senha deve ter menos de 50 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/214.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "UNSTABLE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2021-02-12T21:58:09.561Z"
+    },
+    {
+      "id": 226,
+      "name": "C6 Bank",
+      "primaryColor": "FFE45C",
+      "institutionUrl": "https://www.c6bank.com.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}$",
+          "validationMessage": "CPF deve ter 11 números.",
+          "label": "CPF",
+          "name": "cpf",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "A senha deve ter 6 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/226.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "OFFLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "CREDIT_CARDS", "IDENTITY"],
+      "createdAt": "2022-06-09T16:11:36.239Z"
+    },
+    {
+      "id": 219,
+      "name": "Caixa Economica Federal ",
+      "primaryColor": "296fa7",
+      "institutionUrl": "https://www.caixa.gov.br",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^.{4,20}$",
+          "validationMessage": "O usuário deve ter de 4 a 20 caracteres.",
+          "label": "Usuário",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 caracteres.",
+          "label": "Senha Internet",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/219.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "IDENTITY",
+        "CREDIT_CARDS"
+      ],
+      "createdAt": "2021-03-26T19:12:29.184Z"
+    },
+    {
+      "id": 216,
+      "name": "Caixa Economica Federal Empresas",
+      "primaryColor": "296fa7",
+      "institutionUrl": "https://www.caixa.gov.br",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^.{4,20}$",
+          "validationMessage": "O usuário deve ter de 4 a 20 caracteres.",
+          "label": "Usuário",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 caracteres.",
+          "label": "Senha Internet",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/216.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "IDENTITY",
+        "CREDIT_CARDS"
+      ],
+      "createdAt": "2021-02-19T14:29:07.870Z"
+    },
+    {
+      "id": 223,
+      "name": "Clear",
+      "primaryColor": "#0500F5",
+      "institutionUrl": "https://corretora.clear.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^(\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2})|(\\d{2}.?\\d{3}.?\\d{3}/?\\d{4}-?\\d{2})$",
+          "validationMessage": "CPF ou CNPJ deve ter 11 ou 14 números.",
+          "label": "CPF/CNPJ",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "A senha deve ter 6 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/223.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "IDENTITY"
+      ],
+      "createdAt": "2022-03-12T12:02:10.655Z"
+    },
+    {
+      "id": 213,
+      "name": "Genial Investimentos",
+      "primaryColor": "101c50",
+      "institutionUrl": "https://www.genialinvestimentos.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^\\S+@\\S+\\.\\S+$",
+          "validationMessage": "O e-mail deve ter no formato nome@email.com.",
+          "type": "text",
+          "label": "E-mail",
+          "name": "email",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "A senha deve ter 6 números.",
+          "type": "password",
+          "label": "Senha",
+          "name": "password",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/213.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2021-02-01T23:06:43.171Z"
+    },
+    {
+      "id": 201,
+      "name": "Itaú",
+      "primaryColor": "EC7000",
+      "institutionUrl": "https://www.itau.com.br",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3,3}\\d$",
+          "validationMessage": "O agência deve ter 4 números.",
+          "label": "Agência",
+          "name": "agency",
+          "type": "number",
+          "placeholder": "Exemplo: 1234",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{5,5}-?\\d$",
+          "validationMessage": "A conta deve ter 6 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "number",
+          "placeholder": "Exemplo: 12345-6",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 números.",
+          "label": "Senha Eletrônica",
+          "name": "password",
+          "type": "password",
+          "placeholder": "Exemplo: 123456",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/201.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-09-06T23:05:55.348Z"
+    },
+    {
+      "id": 218,
+      "name": "Itaú Empresas",
+      "primaryColor": "EC7000",
+      "institutionUrl": "https://www.itau.com.br/empresas",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3,3}\\d$",
+          "validationMessage": "O agência deve ter 4 números.",
+          "label": "Agência",
+          "name": "agency",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{5,5}-?\\d$",
+          "validationMessage": "A conta deve ter 6 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "number",
+          "placeholder": "Exemplo: 12345-6",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 números.",
+          "label": "Senha Eletrônica",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^(\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2})|(\\d{9})$",
+          "validationMessage": "CPF ou código do operador deve ter 11 ou 9 números.",
+          "label": "CPF ou Código do operador",
+          "name": "cpfOrOperator",
+          "type": "number",
+          "placeholder": "",
+          "optional": true
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/218.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "CREDIT_CARDS",
+        "IDENTITY"
+      ],
+      "createdAt": "2021-03-16T13:29:20.459Z"
+    },
+    {
+      "id": 206,
+      "name": "Mercado Pago",
+      "primaryColor": "009ee3",
+      "institutionUrl": "https://www.mercadopago.com.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "label": "Access Token",
+          "name": "accessToken",
+          "type": "text",
+          "placeholder": "User Access Token",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/206.svg",
+      "hasMFA": false,
+      "oauthUrl": "https://auth.mercadopago.com.br/authorization?client_id=3960514748228649&redirect_uri=https://api.pluggy.ai/connectors/206/oauth/callback&response_type=code&platform_id=mp&scopes=read,offline_access&state=5463ba19-cc08-4bf9-9b53-dace96867b51",
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["TRANSACTIONS", "ACCOUNTS", "IDENTITY"],
+      "createdAt": "2020-11-16T16:55:57.059Z"
+    },
+    {
+      "id": 204,
+      "name": "Modal Mais",
+      "primaryColor": "655dff",
+      "institutionUrl": "https://bancodigital.modalmais.com.br",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}$",
+          "validationMessage": "CPF deve ter 11 números.",
+          "label": "CPF",
+          "name": "user",
+          "type": "text",
+          "placeholder": "CPF: 123456789-12",
+          "optional": false
+        },
+        {
+          "validation": "^.{1,50}$",
+          "validationMessage": "A senha deve ter menos de 50 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "O App Token deve ter 6 números.",
+          "name": "token",
+          "label": "App Token",
+          "type": "number",
+          "placeholder": "Exemplo: 123456",
+          "mfa": true,
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/204.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-08-31T21:16:16.807Z"
+    },
+    {
+      "id": 212,
+      "name": "Nubank",
+      "primaryColor": "8a0fbe",
+      "institutionUrl": "https://nubank.com.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}$",
+          "validationMessage": "CPF deve ter 11 números.",
+          "label": "CPF",
+          "name": "cpf",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{8,50}$",
+          "validationMessage": "A senha deve ter de 8 a 50 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/212.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "IDENTITY",
+        "CREDIT_CARDS"
+      ],
+      "createdAt": "2021-01-26T13:56:43.907Z"
+    },
+    {
+      "id": 207,
+      "name": "Nuinvest",
+      "primaryColor": "4C0677",
+      "institutionUrl": "https://www.nuinvest.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^.{1,50}$",
+          "validationMessage": "O e-mail, Nº da conta ou CPF inserido é inválido.",
+          "label": "Usuário",
+          "name": "user",
+          "type": "text",
+          "placeholder": "E-mail, n.º da conta ou CPF",
+          "optional": false
+        },
+        {
+          "validation": "^.{1,50}$",
+          "validationMessage": "A senha deve ter menos de 50 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "O Easy Token deve ter 6 números.",
+          "label": "Easy Token",
+          "name": "token",
+          "mfa": true,
+          "type": "number",
+          "placeholder": "Exemplo: 123456",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/207.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2020-10-24T17:55:54.224Z"
+    },
+    {
+      "id": 210,
+      "name": "Orama Investimentos",
+      "primaryColor": "639d31",
+      "institutionUrl": "https://www.orama.com.br/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^(\\S+@\\S+\\.\\S+)|(\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2})$",
+          "validationMessage": "O e-mail ou CPF inserido é inválido.",
+          "label": "E-mail/CPF",
+          "name": "email",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6,50}$",
+          "validationMessage": "A senha deve ter de 6 a 50 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{2}/\\d{2}/\\d{4}$",
+          "validationMessage": "A data de Nascimento inserida é inválida, deve ter o formato DD/MM/AAAA.",
+          "label": "Data de Nascimento",
+          "name": "birthDate",
+          "type": "text",
+          "placeholder": "Exemplo: 18/04/1991",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/210.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2020-12-15T16:01:51.042Z"
+    },
+    {
+      "id": 2,
+      "name": "Pluggy Bank BR",
+      "primaryColor": "ef294b",
+      "institutionUrl": "https://pluggy.ai",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "label": "User",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "validation": "^user-.{2,30}$",
+          "validationMessage": "O user deve começar com \"user-\"",
+          "optional": false
+        },
+        {
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "validation": "^.{6,20}$",
+          "validationMessage": "A senha deve ter entre 6 e 20 caracteres",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/2.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "OPPORTUNITIES",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-09-07T00:08:06.588Z"
+    },
+    {
+      "id": 8,
+      "name": "Pluggy Bank BR Business",
+      "primaryColor": "ef294b",
+      "institutionUrl": "https://pluggy.ai",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "label": "User",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "validation": "^user-.{2,30}$",
+          "validationMessage": "O user deve começar com \"user-\"",
+          "optional": false
+        },
+        {
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "validation": "^.{6,20}$",
+          "validationMessage": "A senha deve ter entre 6 e 20 caracteres",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/3.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "OPPORTUNITIES",
+        "IDENTITY"
+      ],
+      "createdAt": "2022-10-12T21:18:37.084Z"
+    },
+    {
+      "id": 4,
+      "name": "Pluggy Bank BR with MFA 1-step",
+      "primaryColor": "ef294b",
+      "institutionUrl": "https://pluggy.ai",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "label": "User",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "validation": "^user-.{2,30}$",
+          "validationMessage": "O user deve começar com \"user-\"",
+          "optional": false
+        },
+        {
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "validation": "^.{6,20}$",
+          "validationMessage": "A senha deve ter entre 6 e 20 caracteres",
+          "optional": false
+        },
+        {
+          "name": "token",
+          "label": "Mobile Token",
+          "type": "number",
+          "placeholder": "Example: 123456",
+          "validation": "^\\d{6}$",
+          "validationMessage": "Token must be 6 digits",
+          "mfa": true,
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/3.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "OPPORTUNITIES",
+        "IDENTITY"
+      ],
+      "createdAt": "2021-05-04T13:04:30.105Z"
+    },
+    {
+      "id": 5,
+      "name": "Pluggy Bank BR with MFA 2-step",
+      "primaryColor": "ef294b",
+      "institutionUrl": "https://pluggy.ai",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "label": "User",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "validation": "^user-.{2,30}$",
+          "validationMessage": "O user deve começar com \"user-\"",
+          "optional": false
+        },
+        {
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "validation": "^.{6,20}$",
+          "validationMessage": "A senha deve ter entre 6 e 20 caracteres",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/3.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "PAYMENT_DATA",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "OPPORTUNITIES",
+        "IDENTITY"
+      ],
+      "createdAt": "2021-05-04T13:04:30.105Z"
+    },
+    {
+      "id": 205,
+      "name": "Rico Investimentos",
+      "primaryColor": "0a0742",
+      "institutionUrl": "https://www.rico.com.vc/",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^\\d{3,19}\\d$",
+          "validationMessage": "A conta deve ter de 4 a 20 números.",
+          "label": "Conta",
+          "name": "user",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "O Rico Token deve ter 6 números.",
+          "label": "Rico Token",
+          "name": "token",
+          "type": "number",
+          "mfa": true,
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/205.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS", "INVESTMENTS", "IDENTITY"],
+      "createdAt": "2020-10-16T12:21:50.918Z"
+    },
+    {
+      "id": 208,
+      "name": "Santander",
+      "primaryColor": "cc0000",
+      "institutionUrl": "https://www.santander.com.br/",
+      "country": "BR",
+      "type": "PERSONAL_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}$",
+          "validationMessage": "CPF deve ter 11 números.",
+          "label": "CPF",
+          "name": "user",
+          "type": "text",
+          "placeholder": "Exemplo: 12345678901",
+          "optional": false
+        },
+        {
+          "validation": "^.{6,8}$",
+          "validationMessage": "A senha deve ter de 6 a 8 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/208.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "TRANSACTIONS",
+        "CREDIT_CARDS",
+        "INVESTMENTS",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-11-04T12:13:33.007Z"
+    },
+    {
+      "id": 221,
+      "name": "Santander Empresas",
+      "primaryColor": "cc0000",
+      "institutionUrl": "https://www.santander.com.br/",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{3,3}\\d$",
+          "validationMessage": "O agência deve ter 4 números.",
+          "label": "Agência",
+          "name": "agency",
+          "type": "text",
+          "placeholder": "Exemplo: 1234",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{5,9}\\d$",
+          "validationMessage": "A conta deve ter de 6 a 10 números.",
+          "label": "Conta",
+          "name": "account",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{3,14}$",
+          "validationMessage": "O usuário deve ter de 3 a 14 caracteres.",
+          "label": "Usuário",
+          "name": "user",
+          "type": "text",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{4,8}$",
+          "validationMessage": "A senha deve ter de 4 a 8 caracteres.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/221.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "CREDIT_CARDS",
+        "TRANSACTIONS",
+        "INVESTMENTS",
+        "IDENTITY",
+        "PAYMENT_DATA"
+      ],
+      "createdAt": "2021-05-16T14:31:08.293Z"
+    },
+    {
+      "id": 228,
+      "name": "Sicoob Empresas",
+      "primaryColor": "#00AE9D",
+      "institutionUrl": "https://www.sicoob.com.br/",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "label": "Cooperativa",
+          "name": "cooperativa",
+          "type": "number",
+          "placeholder": "Exemplo: 2342",
+          "optional": false
+        },
+        {
+          "label": "Chave de Acceso",
+          "name": "chaveAcesso",
+          "type": "text",
+          "placeholder": "Exemplo: H332I2",
+          "optional": false
+        },
+        {
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "Exemplo: 123133",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/228.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS"],
+      "createdAt": "2022-10-14T13:39:27.510Z"
+    },
+    {
+      "id": 227,
+      "name": "Sicredi Empresas",
+      "primaryColor": "3FA110",
+      "institutionUrl": "https://www.sicredi.com.br/",
+      "country": "BR",
+      "type": "BUSINESS_BANK",
+      "credentials": [
+        {
+          "validation": "^\\d{2}.?\\d{3}.?\\d{3}/?\\d{4}-?\\d{2}$",
+          "validationMessage": "CNPJ deve ter 14 números.",
+          "label": "CNPJ",
+          "name": "cnpj",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^.{3,15}$",
+          "validationMessage": "O usuário deve ter de 3 a 15 caracteres.",
+          "label": "User",
+          "name": "user",
+          "type": "text",
+          "placeholder": "User",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "A senha deve ter 6 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "Password",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/227.svg",
+      "hasMFA": false,
+      "health": {
+        "status": "ONLINE",
+        "stage": "BETA"
+      },
+      "products": ["ACCOUNTS", "TRANSACTIONS"],
+      "createdAt": "2022-09-01T14:04:32.083Z"
+    },
+    {
+      "id": 202,
+      "name": "XP Investimentos",
+      "primaryColor": "111111",
+      "institutionUrl": "https://portal.xpi.com.br",
+      "country": "BR",
+      "type": "INVESTMENT",
+      "credentials": [
+        {
+          "validation": "^\\d{0,9}\\d$",
+          "validationMessage": "O código de cliente deve ter de 1 a 10 números.",
+          "label": "Código de cliente",
+          "name": "account",
+          "type": "number",
+          "placeholder": "",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6,10}$",
+          "validationMessage": "A senha deve ter de 6 a 10 números.",
+          "label": "Senha",
+          "name": "password",
+          "type": "password",
+          "placeholder": "Exemplo: 123456",
+          "optional": false
+        },
+        {
+          "validation": "^\\d{6}$",
+          "validationMessage": "XP Token deve ter 6 números.",
+          "label": "XP Token",
+          "name": "token",
+          "mfa": true,
+          "type": "number",
+          "placeholder": "Exemplo: 123456",
+          "optional": false
+        }
+      ],
+      "imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/202.svg",
+      "hasMFA": true,
+      "health": {
+        "status": "ONLINE",
+        "stage": null
+      },
+      "products": [
+        "ACCOUNTS",
+        "INVESTMENTS",
+        "INVESTMENTS_TRANSACTIONS",
+        "TRANSACTIONS",
+        "IDENTITY"
+      ],
+      "createdAt": "2020-08-10T03:40:32.160Z"
+    }
+  ]
+}

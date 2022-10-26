@@ -1,0 +1,58 @@
+{
+	"id": "026498fc-877a-469f-9192-b71142eb728c",
+	"connector": {
+		"id": 8,
+		"name": "Pluggy Bank BR Business",
+		"primaryColor": "ef294b",
+		"institutionUrl": "https://pluggy.ai",
+		"country": "BR",
+		"type": "BUSINESS_BANK",
+		"credentials": [
+			{
+				"label": "User",
+				"name": "user",
+				"type": "text",
+				"placeholder": "",
+				"validation": "^user-.{2,30}$",
+				"validationMessage": "O user deve começar com \"user-\"",
+				"optional": false
+			},
+			{
+				"label": "Password",
+				"name": "password",
+				"type": "password",
+				"placeholder": "",
+				"validation": "^.{6,20}$",
+				"validationMessage": "A senha deve ter entre 6 e 20 caracteres",
+				"optional": false
+			}
+		],
+		"imageUrl": "https://cdn.pluggy.ai/assets/connector-icons/3.svg",
+		"hasMFA": false,
+		"health": {
+			"status": "ONLINE",
+			"stage": null
+		},
+		"products": [
+			"ACCOUNTS",
+			"CREDIT_CARDS",
+			"TRANSACTIONS",
+			"PAYMENT_DATA",
+			"INVESTMENTS",
+			"INVESTMENTS_TRANSACTIONS",
+			"OPPORTUNITIES",
+			"IDENTITY"
+		],
+		"createdAt": "2022-10-12T21:18:37.084Z"
+	},
+	"createdAt": "2022-10-21T17:06:49.949Z",
+	"updatedAt": "2022-10-21T17:06:50.049Z",
+	"status": "UPDATING",
+	"executionStatus": "CREATED",
+	"lastUpdatedAt": null,
+	"webhookUrl": null,
+	"error": null,
+	"clientUserId": null,
+	"statusDetail": null,
+	"parameter": null
+}
