@@ -13,6 +13,9 @@ export interface Response<T = any> extends AxiosResponse<T> {}
 // isso é um jeito de modular o codigo, se vc desejar trocar o axios que é uma ferramenta de consumo de api
 // por qualquer outra a seu desejo, é só trocar nesse arquivo
 // sem nenhuma necessidade de alterar os /clients
+//----------------------------------
+// acima ---------------------------
+//-----------acima------------------
 
 export class Request {
   constructor(private request = axios) {}

@@ -47,7 +47,9 @@ export class AccountPluggy {
     const item = await Item.findByIdAndUpdate({ _id: idMongoose }, mudanca);
 
     if (item) return item;
+    // caso o item exista devolve ele
 
     throw new Error("Error: item não encontrado");
+    // o sistema n pode chegar nesse ponto gerando um erro
   }
 }

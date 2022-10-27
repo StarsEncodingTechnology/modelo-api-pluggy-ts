@@ -1,6 +1,5 @@
-import { NextFunction, Request, Response } from 'express';
-import Authservice from '@src/services/authService';
-
+import { NextFunction, Request, Response } from "express";
+import Authservice from "@src/services/authService";
 
 // isso é um middleware de autenticação
 // ele é executado antes de qualquer rota que ele for declarado
@@ -12,21 +11,22 @@ export function authMiddleware(
   res: Partial<Response>,
   next: NextFunction
 ): void {
-  const token = req.headers?.['x-acess-token'];
-  // captura o token no header para checar validez 
+  const token = req.headers?.["x-acess-token"];
+  // captura o token no header para checar validez
   try {
     const decoded = Authservice.decodeToken(token as string);
     // decoda o token
-    // faz o decoced do token e checa se valido 
+    // faz o decoced do token e checa se valido
 
     req.decoded = decoded;
     // adiciona os dados no decoded
     // para conseguir acessar via req.
-    next();
-} catch (err) {
+    next("");
+  } catch (err) {
     // caso aconteceça algo retorna o motivo
     res.status?.(401).send({
-        code: 401, error: (err as Error).message
-    })
+      code: 401,
+      error: (err as Error).message,
+    });
   }
 }

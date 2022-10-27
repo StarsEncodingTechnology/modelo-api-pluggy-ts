@@ -13,6 +13,11 @@ export class ConnectorsPluggyService {
     apiKey: string,
     sandBox: Boolean = true
   ): Promise<ResponsePluggyListConectorsData> {
-    return  await this.pluggyConectors.buscaListaDeBancosDisponiveis(apiKey, sandBox);
+    return await this.pluggyConectors.buscaListaDeBancosDisponiveis(
+      apiKey,
+      sandBox
+    );
   }
+
+  // @TODO esse service pode ser incremento
 }

@@ -18,8 +18,8 @@ export class ItensPluggyService {
         password,
         connectorId
       );
-      // cria a conexão da pluggy
-
+      // bate na rota da pluggy para criar o item
+      // @TODO não está validando caso já exista esse banco
       await this.criaItemDB(idUser, item.itemId, item.nameBank);
 
       return true;

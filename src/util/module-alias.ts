@@ -1,7 +1,8 @@
 import * as path from "path";
 import moduleAlias from "module-alias";
 
-// configuração para o axios funcione
+// configuração para que o alias funcione
+// essa configuração permite o uso de @src e @test
 
 const files = path.resolve(__dirname, "../..");
 

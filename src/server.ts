@@ -23,8 +23,8 @@ import { TransactionsControllers } from "./controllers/transaction";
 export class SetupServer extends Server {
   constructor(private port = 3000) {
     super();
-    // por ser uma class extendida de outra
-    // necessi
+    // por ser uma class extendida de outra class q tem um constructor
+    // super()
   }
 
   public async init(): Promise<void> {
@@ -51,9 +51,11 @@ export class SetupServer extends Server {
       accountController,
       transactionController,
     ]);
+    // jeito simples de setar os controllers nos sistemas
   }
 
   private async setupDatabase(): Promise<void> {
+    // faz o chamado da conexão do banco
     await database.connect();
   }
 
@@ -64,10 +66,13 @@ export class SetupServer extends Server {
   }
 
   public async close(): Promise<void> {
+    // quando for finalizar o sistema vc vai precisar fazer essa construção
+    // pensando nesse ponto de encerrar a conexão com o banco
     await database.close();
   }
 
   public start(): void {
+    // inicia o linten do express
     this.app.listen(this.port, () => {
       console.log(`Iniciado em : ${this.port}`);
     });
